@@ -1,440 +1,442 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-<style>
-button.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>ABR Study Wiki</title>
+	<style>
+	button.accordion {
+	    background-color: #eee;
+	    color: #444;
+	    cursor: pointer;
+	    padding: 18px;
+	    width: 100%;
+	    border: none;
+	    text-align: left;
+	    outline: none;
+	    font-size: 15px;
+	    transition: 0.4s;
+	}
 
-button.accordion.active, button.accordion:hover {
-    background-color: #ddd;
-}
+	button.accordion.active, button.accordion:hover {
+	    background-color: #ddd;
+	}
 
-button.accordion:after {
-    content: '\002B';
-    color: #777;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-}
+	button.accordion:after {
+	    content: '\002B';
+	    color: #777;
+	    font-weight: bold;
+	    float: right;
+	    margin-left: 5px;
+	}
 
-button.accordion.active:after {
-    content: "\2212";
-}
+	button.accordion.active:after {
+	    content: "\2212";
+	}
 
-div.panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
-</style>
-</head>
-<body>
+	div.panel {
+	    padding: 0 18px;
+	    background-color: white;
+	    max-height: 0;
+	    overflow: hidden;
+	    transition: max-height 0.2s ease-out;
+	}
+	</style>
+	</head>
+	<body>
 
-<h1>HTML ABR Preparation Wiki</h1>
-<p>Quickly navigate study materials, references, and practice questions all from within the comfort of your browser.</p>
-</br>
-<small>J.Neylon, PhD, DABR</small>
-</br>
-<small>Accumulating & Organizing Since 2017</small>
-</br>
+	<h1>HTML ABR Preparation Wiki</h1>
+	<p>Quickly navigate study materials, references, and practice questions all from within the comfort of your browser.</p>
+	</br>
+	<small>J.Neylon, PhD, DABR</small>
+	</br>
+	<small>Accumulating & Organizing Since 2017</small>
+	</br>
 
-<p>
-	See Also:
-	<li><a href="tg_reports.html">TG Reports</a></li>
-	<li><a href="raphex.html">Practice Questions & Answers</a></li>
-</p>
-</br>
-
-<h2>ABR Study Materials</h2>
-
-<button class="accordion">Equipment</button>
-<div class="panel">
-    <ul data-role="listview">
-	  <p>
-		<li><a href="ABR_Study/Review/Equipment.pdf">Summary Review Materials</a></li>
-		<li><a href="UCLA_PhysicsReview/0-BeamLine-Components.pdf">Beam-Line Components</a></li>
-	  </p>
-	  <p><li><a>Sub-Topics</a></li>
-		<ul data-role="listview">
-		  <li><a href="ABR_Study/1-Equipment/01-LINAC_Components.pdf">LINAC Beamline Components</a></li>
-		  <li><a href="ABR_Study/1-Equipment/02-FlatteningFilters.pdf">Flattening Filters</a></li>
-		  <li><a href="ABR_Study/1-Equipment/03-Klystron.pdf">Klyston</a></li>
-		  <li><a href="ABR_Study/1-Equipment/04-Magnetron.pdf">Magnetron</a></li>
-		  <li><a href="ABR_Study/1-Equipment/05-ElectronGun.pdf">Electron Gun</a></li>
-		  <li><a href="ABR_Study/1-Equipment/06-EnergySwitch_Accel_Waveguide.pdf">Energy Switch, Accelerator Wave-Guide</a></li>
-		  <li><a href="ABR_Study/1-Equipment/07-IonChamberCorrectionFactors.pdf">Ion Chamber - Correction Factors</a></li>
-		  <li><a href="ABR_Study/1-Equipment/08-Stem_Effect.pdf">Ion Chamber - Stem Effect</a></li>
-		  <li><a href="ABR_Study/1-Equipment/09-ChamberVolume.pdf">Ion Chamber - Effect of Chamber Volume</a></li>
-		  <li><a href="ABR_Study/1-Equipment/10-DetectorComparison.pdf">Ion Chamber - Comparison with Other Detectors</a></li>
-		  <li><a href="ABR_Study/1-Equipment/11-Electrometers.pdf">Electrometers</a></li>
-		  <li><a href="ABR_Study/1-Equipment/12-WaterSubstitutes_Phantoms.pdf">Water/Tissue Substitute Materials and Phantoms</a></li>
-		  <li><a href="ABR_Study/1-Equipment/13-Simulation.pdf">CT and MR Simulators</a></li>
-		  <li><a href="ABR_Study/1-Equipment/14-SRS_QA_Equipment.pdf">SRS QA Equipment</a></li>
-		  <li><a href="ABR_Study/1-Equipment/15-TLD.pdf">TLDs</a></li>
-		  <li><a href="ABR_Study/1-Equipment/16-Film.pdf">Film</a></li>
-		  <li><a href="ABR_Study/1-Equipment/20-Equipment_Review_1.pdf">Review Questions Vol.1</a></li>
-		  <li><a href="ABR_Study/1-Equipment/21-Equipment_Review_2.pdf">Review Questions Vol.2</a></li>
-		</ul>
-	  </p>
-	  <p><li><a>Relevant Task Groups</a></li>
-		<ul data-role="listview">
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_48.pdf">TG-39: The Calibration and Use of Plane-Parallel Ionization Chambers for Dosimetry of Electron Beams</a></li>
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_72.pdf">TG-50: Basic Applications of Multi-Leaf Collimators</a></li>
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_63.pdf">TG-55: Radiochromic Film Dosimetry</a></li>
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_216.pdf">TG-69: Radiographic Film for MV Beam Dosimetry</a></li>
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_120.pdf">TG-120: Dosimetry Tools and Techniques for IMRT</a></li>			
-		</ul>
-	  </p>
-	  <p><li><a>References</a></li>
-		<ul data-role="listview">
-		  <li><a href="PDFs/LinacLecture2.pdf">Therapy Electron Linear Accelerators Explained</a></li>
-		  <li><a href="PDFs/NoviceGuide2ElectronLinearAccelerators.pdf">Novice Guide to Electron Linear Accelerators</a></li>
-		  <li><a href="PDFs/Thyratron_Pulsing_Problems.pdf">Thyratron Related Problems in the LINAC Modulator</a></li>
-		  <li><a href="PDFs/Articles/2006-Thwaites_HistoryAndDevelopmentOfTheClinicalLINAC.pdf">History & Development of the Clinical LINAC - Thwaites (2006)</a></li>
-		  <li><a href="PDFs/Articles/2011-Peach_AcceleratorScienceInMedicalPhysics.pdf">Accelerator Science in Medical Physics - Peach (2011)</a></li>
-		  <li><a href="PDFs/Articles/1999-Ranger-AAPM_RSNA-RadiationDetectors.pdf">Radiation Detectors in Nuclear Medicine - Ranger, RadioGraphics (1999)</a></li>
-		  <li><a href="PDFs/Articles/1998-Yu-TLD_Annealing.pdf">TLD Dose Measurement - Yu & Luxton, Med Phys 26.6 (1999)</a></li>
-		</ul>
-	  </p>
-	</ul>
-</div>
-
-<button class="accordion">Patient Related Measurements</button>
-<div class="panel">
-    <ul data-role="listview">
-	  <p>
-	    <li><a href="ABR_Study/Review/Measurement-Planning.pdf">Summary Review Materials</a></li>
-	    <li><a href="PDFs/2009-ElectronBeamTherapy-Hristov.pdf">Electron Beam Therapy - Dimitre Hristov (2009)</a></li>
-		<li><a href="PDFs/Add_052418/CurrentConceptsDoseCalc_Ahnesjo.pdf">Current Concepts in Dose Calculations - Anders Ahnesjo</a></li>
-		<li><a href="PDFs/Add_052418/IMRT_OptiAlgos_Shepard.pdf">IMRT Optimization Algorithms - David Shepard</a></li>
-		<li><a href="PDFs/Add_052418/Knoos-DoseCalculationModel-PO.pdf">Model Based Dose Calculations Algorithms - Tom Knoos</a></li>
-		<li><a href="PDFs/DetectorComparisonSummary.pdf">Summary of Radiation Detectors & Dosimeters</a></li>
-		<li><a href="PDFs/IMRT_Considerations.pdf">Considerations for IMRT</a></li>
-		<li><a href="PDFs/SRS_Considerations.pdf">Considerations for SRS</a></li>
-		<li><a href="PDFs/AcceptanceCommissionCalculate.pdf">Bullet Points for Acceptance & Commissioning of LINAC Treatment Machine & TPS</a></li>
-		<li><a href="PDFs/Brachy/2006-LDRIntracavitaryApplicators.pdf">Applicators for LDR Intracavitary Treatment of GYN Cancers</a></li>
-		<li><a href="PDFs/Brachy/APBI_Notes.pdf">Notes on APBI</a></li>
-		<li><a href="PDFs/Brachy/Endobronc-Esophagus-Notes.pdf">Notes on Endobronchial & Esophogeal Brachytherapy</a></li>
-		<li><a href="PDFs/Brachy/Gyn_Brachy_Notes.pdf">Notes on Gynocological Brachytherapy</a></li>
-		<li><a href="PDFs/Brachy/ProstateLDR_Notes.pdf">Notes on Prostate LDR</a></li>
-		<li><a href="PDFs/Brachy/HDR_Brachy_2010-Findley.pdf">Rad Onc Residency Lectures in Physics: HDR Brachytherapy - David Findley</a></li>
-		<li><a href="PDFs/Brachy/HDRApplicators-Dosimetry-Rownd.pdf">HDR Applicators & Dosimetry - Jason Rownd</a></li>
-		<li><a href="PDFs/Brachy/ICRUReporting_CervicalIntracavitary.pdf">ICRU Cervical Intracavitary Dose Reporting Recommendation - Bruce Thomadsen</a></li>
-		<li><a href="PDFs/Brachy/Thomadsen-FromLDR2HDR_Cervix.pdf">Conversion from LDR to HDR Intracavitary Brachytherapy for Cervical Cancer - Bruce Thomadsen</a></li>
-		<li><a href="PDFs/Brachy/LDR_Intracavitary_Applicators.pdf">LDR Intracavitary Brachytherapy Applicators - UT MD Anderson Cancer Center</a></li>
-	  </p>
-	  <p><li><a>Sub-Topics</a></li>
-		<ul data-role="listview">
-		  <li><a href="ABR_Study/2-PatientRelatedMeasurements/01-PlanQuality.pdf">Plan Quality & Improvement</a></li>
-		  <li><a href="ABR_Study/2-PatientRelatedMeasurements/02-BeamModifiersAndVolumes.pdf">Use of Wedges & Modifiers</a></li>
-		  <li><a href="ABR_Study/2-PatientRelatedMeasurements/03-CT_Commissioning.pdf">Commissioning of CT for RT Planning</a></li>
-		  <li><a href="ABR_Study/2-PatientRelatedMeasurements/04-DVH_DoseTolerance.pdf">Use of DVHs & Tolerance Doses</a></li>
-		  <li><a href="ABR_Study/2-PatientRelatedMeasurements/05-BeamCharacteristics_Photon.pdf">Photon Beam Characteristics and Modeling</a></li>
-		  <li><a href="ABR_Study/2-PatientRelatedMeasurements/06-DoseCalculationAlgorithms.pdf">Photon Dose Calculation Algorithms</a></li>
-		  <li><a href="PDFs/Add_052418/EclipseAlgorithms13.6_RefGuide.pdf">Eclipse 13.6 Photon & Electron Algorithms Reference Guide</a></li>
-		  <li><a href="ABR_Study/2-PatientRelatedMeasurements/07-SeparatingPrimaryAndScatter.pdf">Methods for Separating Primary & Scatter</a></li>
-		  <li><a href="ABR_Study/2-PatientRelatedMeasurements/08-MU_Calcs_Photons.pdf">Photon MU Calculations</a></li>
-		  <li><a href="ABR_Study/2-PatientRelatedMeasurements/09-BeamCharacteristics_Electron.pdf">Electron Beam Characteristics</a></li>
-		  <li><a href="ABR_Study/2-PatientRelatedMeasurements/10-Dosimetry_Electron.pdf">Electron Dosimetry</a></li>
-		  <li><a href="ABR_Study/2-PatientRelatedMeasurements/11-MU_Calcs_Electrons.pdf">Electron MU Calculations</a></li>
-		  <li><a href="ABR_Study/2-PatientRelatedMeasurements/12-Brachy_General.pdf">Brachytherapy Review</a></li>
-		  <li><a href="ABR_Study/2-PatientRelatedMeasurements/13-Brachy_APBI.pdf">Brachytherapy: Partial Breast Irradiation</a></li>
-		  <li><a href="ABR_Study/2-PatientRelatedMeasurements/20-PatientMeasurement_Review_2.pdf">Patient Related Measurement Review Questions</a></li>
-		</ul>
-	  </p>
-	  <p><li><a>Relevant Task Groups</a></li>
-		<ul data-role="listview">
-			<li><a href="https://www.aapm.org/pubs/reports/RPT_32.pdf">TG-25: Clinical Electron-Beam Dosimetry</a></li>
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_17.pdf">TG-29: The Physical Aspects of Total and Half Body Photon Irradiation</a></li>
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_50.pdf">TG-36: Fetal Dose from Radiotherapy with Photon Beams</a></li>
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_51.pdf">TG-43: Dosimetry of Interstitial Brachytherapy Sources</a></li>
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_84.pdf">TG-43-U: Update to TG-43</a></li>
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_84S.pdf">TG-43-U-S: Supplement to Update to TG-43</a></li>
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_76.pdf">TG-61: Protocol for 40-300 kV X-Ray Beam Dosimetry in Radiotherapy and Radiobiology</a></li>
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_87.pdf">TG-62: Diode In Vivo Dosimetry for Patients Receiving External Beam Radiation Therapy</a></li>
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_85.pdf">TG-65: Tissue Inhomogeneity Correction for Megavoltage Photon Beams</a></li>
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_99.pdf">TG-70: Recommendations for Clinical Electron Beam Dosimetry</a></li>
-			<li><a href="https://www.aapm.org/pubs/reports/RPT_258.pdf">TG-71: Monitor Unit Calculations for External Photon and Electron Beams</a></li>
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_91.pdf">TG-76: The Management of Respiratory Motion in Radiation Oncology</a></li>
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_120.pdf">TG-120: Dosimetry Tools and Techniques for IMRT</a></li>
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_186.pdf">TG-186: Model-Based Dose Calculations Methods in Brachytherapy Beyond the TG-43 Formalism</a></li>
-		</ul>
-	  </p>
-	  <p><li><a>References</a></li>
-		<ul data-role="listview">	
-			<li><a href="PDFs/RCF_dosimetry.pdf">Do's and Dont's of Gafchromic Film Dosimetry</a></li>
-			<li><a href="PDFs/BMP203_Dosimeters_2013-04-17.pdf">Radiation Dosimeters - Minsong Cao (2013)</a></li>
-			<li><a href="PDFs/critical_structures_dose_constraints.pdf">Critical Structures Dose-Volume Constraint Guidelines (2008)</a></li>
-			<li><a href="PDFs/Add_052418/StemEffect_1975.pdf">Stem Corrections for Ionization Chambers - Ibbott et al, Med Phys 2.6 (1975)</a></li>
-			<li><a href="PDFs/Articles/1999-Ahnesjo_DoseCalculations.pdf">Dose Calculations for External Photon Beams in Radiotherapy - Ahnesjo & Aspradakis, PMB 44 (1999)</a></li>
-			<li><a href="PDFs/Articles/1985-Mohan-Validity_of_Separating_Primary_and_Scatter.pdf">Validity of the Concept of Separating Primary & Scatter Dose - Mohan & Chui, Med Phys 12.6 (1985)</a></li>
-			<li><a href="PDFs/Brachy/2006-Brachytherapy-Falkenberg_HDR_vs_LDR.pdf">LDR vs. HDR Intracavitary Brachy for Cervical Carcinoma - Falkenberg et al, Brachytherapy 5 (2006)</a></li>
-			<li><a href="PDFs/Brachy/ABS_Recs_HDR.pdf">ABS Recommendations for HDR Brachytherapy for Cervical Carcinoma - Nag et al, IJROBP 48.1 (2000)</a></li>
-			<li><a href="PDFs/Brachy/ABS_Recs-LDR.pdf">ABR Recommendations for LDR Brachytherapy for Cervical Carcinoma - Nag et al, IJROBP 52.1 (2002)</a></li>
-		</ul>
-	  </p>
-	</ul>
-</div>
-
-<button class="accordion">Calibration, QC, & QA</button>
-<div class="panel">
-    <ul data-role="listview">
-	  <p><li><a href="ABR_Study/Review/Calibration-QA-QC.pdf">Summary Review Materials</a></li></p>
-	  <p>
-		<li><a href="PDFs/TG51/Wisc_TG21_Lecture.pdf">UWisconsin TG-21 Notes</a></li>
-	    <li><a href="PDFs/TG51/Wisc_TG51_Lecture.pdf">UWisconsin TG-51 Notes</a></li>
-		<li><a href="PDFs/Brachy/BrachyPlanQA.pdf">QA Review of Brachytherapy Treatment Plans - Zuofong Li</a></li>
-		<li><a href="PDFs/Brachy/Calibration_Brachy_Sources.pdf">Calibration for Brachytherapy Sources - Larry DeWerd</a></li>
-	  </p>
-	  <p><li><a>Sub-Topics</a></li>
-		<ul data-role="listview">
-		  <li><a href="ABR_Study/3-Calibration_QC_QA/01-TG51.pdf">TG-51 Calibration Procedure</a></li>
-		  <li><a href="ABR_Study/3-Calibration_QC_QA/02-OutputCalibration.pdf">Output Calibrations</a></li>
-		  <li><a href="ABR_Study/3-Calibration_QC_QA/03-KERMA_v_DOSE.pdf">KERMA v. Dose</a></li>
-		  <li><a href="ABR_Study/3-Calibration_QC_QA/04-QC_Photons.pdf">Photon QC</a></li>
-		  <li><a href="ABR_Study/3-Calibration_QC_QA/05-LINAC_Acceptance_Commissioning.pdf">LINAC Acceptance & Commissioning</a></li>
-		</ul>
-	  </p> 
-	  <p><li><a>Relevant Task Groups</a></li>
-		<ul data-role="listview">
-			<li><a href="http://www.aapm.org/pubs/reports/OR_02.pdf">TG-21: Protocol for the Determination of Absorbed Dose from High-Energy Photon and Electron Beams</a></li>
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_46.PDF">TG-40: Comprehensive QA for Radiation Oncology</a></li>
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_47.pdf">TG-45: Code of Practice for Radiotherapy Accelerators</a></li>
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_67.pdf">TG-51: Protocol for Clinical Reference Dosimetry of High-Energy Photon and Electron Beams</a></li>
-			<li><a href="https://www.aapm.org/pubs/reports/RPT_67_Addendum.pdf">TG-51A: Addendum to the AAPM’s TG-51 protocol for clinical reference dosimetry of high-energy photon beams</a></li>
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_62.pdf">TG-53: Quality Assurance for Clinical Radiotherapy Treatment Planning</a></li>
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_83.pdf">TG-66: QA for CT Simulators and the CT Simulation Process</a></li>
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_97.pdf">TG-74: In-Air Output Ratio, Sc, for MV Photon Beams</a></li>
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_101.pdf">TG-101: Stereotactic Body Radiation Therapy</a></li>
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_106.pdf">TG-106: Accelerator Beam Data Commissioning Equipment and Procedures</a></li>
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_119.pdf">TG-119: IMRT Commissioning</a></li>
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_142.pdf">TG-142: QA of Medical Accelerators</a></li>
-			<li><a href="https://www.aapm.org/pubs/reports/RPT_147.pdf">TG-147: QA for Non-Radiographic Radiotherapy Localization and Positioning Systems</a></li>
-			<li><a href="https://www.aapm.org/pubs/reports/RPT_148.pdf">TG-148: QA of Tomotherapy</a></li>
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_154.pdf">TG-154: QA of US-guided EBRT for Prostate Cancer</a></li>
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_166.pdf">TG-166: The Use and QA of Biologically Related Models for Treatment Planning</a></li>
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_179.pdf">TG-179: QA for IGRT Utilizing CT-based Technologies</a></li>
-		</ul>
-	  </p>
-	  <p><li><a>References</a></li>
-		<ul data-role="listview">
-		  <li><a href="PDFs/2012-CommissioningVarianTruebeamLINAC.pdf">Commissioning of the Varian Truebeam - Glide-Hurst et al, Med Phys 40.3(2013)</a></li>
-		  <li><a href="PDFs/2017_Truebeam_IPA.pdf">Varian Truebeam Installation Product Acceptance Procedure (2017)</a></li>
-		  <li><a href="PDFs/TG51/CHO_TG21-51.pdf">Comparison Between TG-51 & TG-21 - Cho et al, JACMP 1.3 (2000)</a></li>
-		  <li><a href="PDFs/TG51/TG51_CommonErrors.pdf">TG-51: Experience From 150 Institutions, Common Errors, & Helpful Hints - Tailor et al, JACMP 4.2 (2003)</a></li>
-		  <li><a href="PDFs/CH07_Huq.pdf">Review of TG-51 Protocol - M. Saiful Huq</a></li>
-		  <li><a href="PDFs/08_Followill.pdf">Clinical Implementation of the TG-51 Calibration Protocol - David S. Followill</a></li>
-		  <li><a href="PDFs/CH09_Rogers.pdf">The Physics of AAPM's TG-51 Protocol - D.W.O. Rogers</a></li>
-		  <li><a href="PDFs/09Rogers-ThePhysicsofTG-51.pdf">Physics of the TG-51 Dosimetry Protocol - D.W.O. Rogers, AAPM Summer School (2009)</a></li>
-		  <li><a href="PDFs/TG142_Tolerances.pdf">TG-142 LINAC QA Tolerances</a></li>
-		</ul>
-	  </p>	  
-    </ul>
-</div>
-
-<button class="accordion">Image Acquisition, Processing, & Display</button>
-<div class="panel">
-    <ul data-role="listview">
-	  <p><li><a href="ABR_Study/Review/Imaging.pdf">Summary Review Materials</a></li></p>
-	  <p><li><a>Sub-Topics</a></li>
-		<ul data-role="listview">
-		  <li><a href="ABR_Study/4-Imaging/01-Imaging_1.pdf">Imaging Overview Vol.1</a></li>
-		  <li><a href="ABR_Study/4-Imaging/02-Imaging_2.pdf">Imaging Overview Vol.2</a></li>
-		  <li><a href="ABR_Study/4-Imaging/03-EPID.pdf">Electronic Portal Imaging Detectors</a></li>
-		  <li><a href="PDFs/IGRT.pdf">Image-Guided Radiotherapy at UCLA - S.Tenn & M.Cao (2013)</a></li>
-		</ul>
-	  </p>
-	  <p><li><a>Relevant Task Groups</a></li>
-		<ul data-role="listview">
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_75.pdf">TG-58: Clinical Use of EPI</a></li>
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_95.pdf">TG-75: The Management of Imaging Dose During Image-Guided Radiotherapy</a></li>
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_91.pdf">TG-76: The Management of Respiratory Motion in Radiation Oncology</a></li>
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_104.pdf">TG-104: The Role of In-Room kV X-Ray Imaging for Patient Setup and Target Localization</a></li>
-			<li><a href="https://aapm.onlinelibrary.wiley.com/doi/epdf/10.1002/mp.12256">TG-132: Use of Image Registration & Fusion Algorithms & Techniques in Radiotherapy</a></li>
-		</ul>
-	  </p>
-	  <p><li><a>References</a></li>
-		<ul data-role="listview">
-		  <li><a href="PDFs/EPID-2002-PMB-Antonuk.pdf">EPIDs: A Review - Larry Antonuk, PMB 47 (2002)</a></li>
-		  <li><a href="PDFs/2005-FlatDetectors-Spahn.pdf">Flat Detectors & Their Clinical Applications - Martin Spahn, Eur Radiol 15 (2005)</a></li>
-		</ul>
-	  </p>
-	</ul>
-</div>
-
-<button class="accordion">Radiation Protection & Patient Safety</button>
-<div class="panel">
-    <ul data-role="listview">
-	  <p>
-		<li><a href="ABR_Study/Review/Safety-Shielding.pdf">Summary Review Materials</a></li>
-		</br>
-		<li><a href="PDFs/2016-RadiationProtection-Gupta.pdf">Radiation Protection - Anil Gupta (2016)</a></li>
-		<li><a href="PDFs/2009-StanfordPhysicsCourse-RadiationProtection.pdf">Stanford Rad Onc Residents' Physics Course - Radiation Protection (2009)</a></li>
-		<li><a href="PDFs/IAEATraining-RadiationProtection_Part7-ShieldingDesign.pdf">IAEA Training: Radiation Protection in Radiotherapy Part 7 - Design of Facilities & Shielding</a></li>
-		</br>
-		<li><a href="PDFs/10CFR20.pdf">NRC: 10 CFR Part 20 Summary Slides</a></li>
-		<li><a href="PDFs/NRC-Transpo-of-RadMat.pdf">NRC: Transportation of Radioactive Materials</a></li>
-		</br>
-		<li><a href="PDFs/NCRP/NCRP151_SummarySlides.pdf">NCRP Report No. 151 Summary Slides</a></li>
-		<li><a href="PDFs/NCRP/Overview_NCRP151-Wu.pdf">NCRP Report No. 151 Overview Slides - Raymond Wu</a></li>
-		<li><a href="PDFs/NCRP/NCRP147_SummarySlides_AAPM2007.pdf">NCRP Report No. 147 Summary Slides - Melissa Martin (2007)</a></li>
-		</br>
-		<li><a href="PDFs/NUREG1556-Wendt.pdf">NUREG 1556-based Release of Patients from Radiation Safety Restrictions - Richard Wendt</a></li>
-		</br>
-		<li><a href="PDFs/2006-ShieldingExamples-Rodgers.pdf">Shielding III: Practical Examples, Including IMRT, TBI, SRS - James Rodgers (2006)</a></li>
-		<li><a href="PDFs/2009-Shielding-Klein.pdf">Radiation Shielding - Eric Klein (2009)</a></li>
-		<li><a href="PDFs/2003-VarianNeutronDoors.pdf">Varian - Neutron Doors for High Energy Accelerators (2003)</a></li>
-		</br>
-		<li><a href="PDFs/Brachy/BrachyFacilityShielding.pdf">Brachytherapy Facility Shielding - Glasgow</a></li>
-		<li><a href="PDFs/Brachy/HDR_SLR.pdf">Brachytherapy Physics: HDR Installation, Commissioning, & Procedures</a></li>
-		<li><a href="PDFs/Brachy/2008-UM_HDR_Program_Implementation.pdf">From Licensing to QA, How to Implement HDR Brachy Into Your Clinic - Joann Prisciandaro (2008)</a></li>
+	<p>
+		See Also:
+		<li><a href="tg_reports.html">TG Reports</a></li>
+		<li><a href="raphex.html">Practice Questions & Answers</a></li>
 	</p>
-	  <p><li><a>Relevant Task Groups</a></li>
-		<ul data-role="listview">
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_80.pdf">TG-11: The Solo Practice of Medical Physics in Radiation Oncology</a></li>
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_19.pdf">TG-27: Neutron Measurements Around High Energy X-Ray Radiotherapy Machines</a></li>
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_47.pdf">TG-45: Code of Practice for Radiotherapy Accelerators</a></li>
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_109.pdf">TG-109: Code of Ethics for the AAPM</a></li>
-			<li><a href="http://www.aapm.org/pubs/reports/RPT_160.PDF">TG-160: Radiation Safety Officer Qualifications for Medical Facilities</a></li>
-		</ul>
-	  </p>
-	  <p>
-	    <li><a>NRC Regulations</a></li>
-		<ul data-role="listview">
-		  <li><a href="https://www.nrc.gov/reading-rm/doc-collections/cfr/part019/">NRC: 10 CFR Part 19 - Notices, Instructions & Reports to Workers: Inspection & Investigations</a></li>
-		  <li><a href="https://www.nrc.gov/reading-rm/doc-collections/cfr/part020/">NRC: 10 CFR Part 20 - Standards for Protection Against Radiation</a></li>
-		  <li><a href="https://www.nrc.gov/reading-rm/doc-collections/cfr/part035/">NRC: 10 CFR Part 35 - Medical Use of Byproduct Material</a></li>
-		  <li><a href="https://www.nrc.gov/reading-rm/doc-collections/cfr/part071/">NRC: 10 CFR Part 71 - Packaging & Transportation of Radioactive Material</a></li>
-		</ul>
-	  </p>
-	  <p>
-	    <li><a>NCRP Reports</a></li>
-		<ul data-role="listview">
-		  <li><a href="PDFs/NCRP/NCRP038.pdf">NCRP Report No. 38: Protection Against Neutron Radiation (1971)</a></li>
-		  <li><a href="PDFs/NCRP/NCRP041.pdf">NCRP Report No. 41: Specification of Gamma-Ray Brachytherapy Sources (1974)</a></li>
-		  <li><a href="PDFs/NCRP/NCRP049.pdf">NCRP Report No. 49: Structural Shielding Design & Evaluation for X & Gamma Rays Up To 10 MeV (1976)</a></li>
-		  <li><a href="PDFs/NCRP/NCRP057.pdf">NCRP Report No. 57: Instrumentation & Monitoring Methods for Radiation Protection (1978)</a></li>
-		  <li><a href="PDFs/NCRP/NCRP079.pdf">NCRP Report No. 79: Neutron Contamination from Medical Electron Accelerators (1984)</a></li>
-		  <li><a href="PDFs/NCRP/NCRP105.pdf">NCRP Report No. 105: Radiation Protection for Medical & Allied Health Personal (1989)</a></li>
-		  <li><a href="PDFs/NCRP/NCRP116.pdf">NCRP Report No. 116: Limitation of Exposure to Ionizing Radiation (1993)</a></li>
-		  <li><a href="PDFs/NCRP/NCRP128.pdf">NCRP Report No. 128: Radionuclide Exposure of the Embryo/Fetus (1998)</a></li>
-		  <li><a href="PDFs/NCRP/NCRP136.pdf">NCRP Report No. 136: Evaluation of the Linear-Non-Threshold Dose-Response Model for Ionizing Radiation (2001)</a></li>
-		  <li><a href="PDFs/NCRP/NCRP147.pdf">NCRP Report No. 147: Structural Shielding Design for Medical X-Ray Imaging Facilities (2004)</a></li>
-		  <li><a href="PDFs/NCRP/NCRP151.pdf">NCRP Report No. 151: Structural Shielding Design & Evaluation for MV Radiotherapy Facilities (2005)</a></li>
-		  <li><a href="PDFs/NCRP/NCRP157.pdf">NCRP Report No. 157: Radiation Protection in Educational Institutions (2007)</a></li>
-		  <li><a href="PDFs/NCRP/NCRP174.pdf">NCRP Report No. 174: Preconception & Prenatal Radiation Exposure: Health Effects & Protective Guidance (2013)</a></li>
-		</ul>
-	  </p>
-	  <p>
-		<li><a>ICRU Reports</a></li>
-		<ul data-role="list-view">
-			<li><a href="PDFs/ICRU/ICRU050.pdf">ICRU Report No. 50: Prescribing, Recording, & Reporting Photon Beam Therapy (1993)</a></li>
-			<li><a href="PDFs/ICRU/ICRU062.pdf">ICRU Report No. 62: Prescribing, Recording, & Reporting Photon Beam Therapy: Supplement to ICRU 50 (1999)</a></li>
-			<li><a href="PDFs/ICRU/ICRU071.pdf">ICRU Report No. 71: Prescribing, Recording, & Reporting Electron Beam Therapy (2004)</a></li>
-			<li><a href="PDFs/ICRU/ICRU078.pdf">ICRU Report No. 78: Prescribing, Recording, & Reporting Proton Beam Therapy (2007)</a></li>
-			<li><a href="PDFs/ICRU/ICRU083.pdf">ICRU Report No. 83: Prescribing, Recording, & Reporting Photon Beam IMRT (2010)</a></li>
-			<li><a href="PDFs/ICRU/ICRU089.pdf">ICRU Report No. 89: Prescribing, Recording, & Reporting Brachytherapy for Cancer of the Cervix (2016)</a></li>
-			<li><a href="PDFs/ICRU/ICRU091.pdf">ICRU Report No. 91: Prescribing, Recording, & Reporting of Stereotactic Treatments with Small Photon Beams (2017)</a></li>
-		</ul>
-	  </p>
-	  <p>
-	    <li><a>References</a></li>
-		<ul data-role="listview">
-		  <li><a href="PDFs/2007-McGinley-DirectShieldedDoors.pdf">Direct Shielded Doors - Patton McGinley (2007)</a></li>
-		  <li><a href="PDFs/2001-RadiationShieldingMV_Post_NCRP49_Biggs.pdf">Radiation Shielding for MV Therapy Machines in the Post-NCRP 49 Era - Peter Biggs (2001)</a></li>
-		  <li><a href="PDFs/MelissaMartin-ShieldingDesign.pdf">Shielding Design Methods for Radiation Oncology Depts. - Melissa Martin (2008)</a></li>
-		  <li><a href="PDFs/radsafetymanual.pdf">UCLA Radiation Safety Manual (2012)</a></li>
-		  <li><a href="PDFs/FAQ-Eye_Plaque_Consult.pdf">Eye Plaques FAQ</a></li>
-		  <li><a href="PDFs/2007-ClinacIX-ShieldingCalculationReport-Richardson.pdf">Shield Calculation Report: Varian Clinica IX - Susan Richardson, Methodist Hospital - Willowbrook (2007)</a></li>
-		  <li><a href="PDFs/NCRP/2015-LINAC_Shielding_30Years_Beyond_NCRP49_Biggs.pdf">LINAC Shielding: 30 Years Beyond NCRP 49 - Peter Biggs (2015)</a></li>
-		  <li><a href="https://www.nrc.gov/docs/ML0734/ML073400289.pdf">NUREG-1556 Vol.9, Rev.2: Consolidated Guidance About Materials Licenses</a></li>
-		  <li><a href="PDFs/cfr-title-10.pdf">US Nuclear Regulatory Commission Regulations: Title 10, Code Of Federal Regulations</a></li>
-		</ul>
-	  </p>
-    </ul>
-</div>
+	</br>
 
-<button class="accordion">Additional Resources</button>
-<div class="panel">
-    <ul data-role="listview">
-		<p>
-			<li><a href="UCLA_PhysicsReview/AtomicStructure_and_Radioactivity.pdf">Atomic, Nuclear Structure & Radioactivity</a></li>
-			<li><a href="PDFs/Electrons_Fundamentals.pdf">Electron Beams: Physical Principles & Dosimetry - Gifford (2015)</a></li>
-			</p>
-	</ul>
-    <ul data-role="listview">
-	  <p><li><a>Equation Cheat Sheets</a></li>
-		<ul data-role="listview">
-		  <li><a href="EquationSheets/Rad_Exam_1.pdf">Units, Physical Constants, Atomic & Nuclear Structure</a></li>
-		  <li><a href="EquationSheets/Rad_Exam_2.pdf">Radioactivity & Decay</a></li>
-		  <li><a href="EquationSheets/Rad_Exam_3.pdf">Particle Interactions & Radiation Shielding</a></li>
-		  <li><a href="EquationSheets/ARCcheatsheet.pdf">Advanced Radiotherapy Consulting Equation Sheet</a></li>
-		</ul>
-	  </p>
-	  <p><li><a>Notes</a></li>
-		<ul data-role="listview">
-		  <li><a href="Basic_Physics_Review/2012_DeMarco_PhotonInteractions_Dose.pdf">DeMarco 2012: Photons Interactions & Dose</a></li>
-		  <li><a href="Basic_Physics_Review/2012_DeMarco_Proton101.pdf">DeMarco 2012: Protons 101</a></li>
-		</ul>
-	  </p>
-	  <p><li><a>AAPM Summer School 2009</a></li>
-		<ul data-role="listview">
-		  <li><a href="http://www.aapm.org/education/VL/?t=byE&e=SS&y=2009">AAPM Virtual Library - Presentation Videos</a></li>
-		  <li><a href="http://www.aapm.org/meetings/09SS/ProgramInfo.asp">Meeting Program with Slides</a></li>
-		</ul>
-	  </p>
-	  <p><li><a>Dosimetry Review Course 2009</a></li>
-		<ul data-role="listview">
-			<li><a href="PDFs/Dosi/01-DosimetryReviewAgenda.pdf">Course Agenda</a></li>
-			<li><a href="PDFs/Dosi/02-Quantities-Units.pdf">Review of Math, Quantities, & Units</a></li>
-			<li><a href="PDFs/Dosi/03-BasicRadiationPhysics.pdf">Basic Physics & Photon Beams</a></li>
-			<li><a href="PDFs/Dosi/04-PhotonDoseCalcs.pdf">Dose Calculation Concepts for Photons</a></li>
-			<li><a href="PDFs/Dosi/05-Dosimeters-Detectors.pdf">Radiation Dosimeters</a></li>
-			<li><a href="PDFs/Dosi/06-SpecialTechniques.pdf">Special Planning Techniques</a></li>
-			<li><a href="PDFs/Dosi/07-Safety-Protection.pdf">Radiation Protection</a></li>
-			<li><a href="PDFs/Dosi/08-ClinicalRadiobiology.pdf">Clinical Radiobiology</a></li>
-			<li><a href="PDFs/Dosi/09-QA.pdf">Quality Assurance</a></li>
-			<li><a href="PDFs/Dosi/10-TreatmentPlanning.pdf">Photon Beam Planning</a></li>
-			<li><a href="PDFs/Dosi/11-OffAxis-Inhomogeneities.pdf">Inhomogeneity Corrections</a></li>
-			<li><a href="PDFs/Dosi/12-ElectronPhysics.pdf">Physics of Electron Beams</a></li>
-			<li><a href="PDFs/Dosi/13-ElectronPlanning.pdf">Electron Treatment Planning</a></li>
-			<li><a href="PDFs/Dosi/14-Brachy.pdf">Brachytherapy Physics</a></li>
-			<li><a href="PDFs/Dosi/15-IMRT.pdf">IMRT Theory & Planning</a></li>
-			<li><a href="PDFs/Dosi/16-Imaging.pdf">Imaging in Radiotherapy</a></li>
-			<li><a href="PDFs/Dosi/17-IGRT.pdf">IGRT Techniques</a></li>
-			<li><a href="PDFs/Dosi/18-CalculationExamples.pdf">Calculation Examples</a></li>
-		</ul>
-    </ul>
-</div>
+	<h2>ABR Study Materials</h2>
 
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
+	<button class="accordion">Equipment</button>
+	<div class="panel">
+	    <ul data-role="listview">
+		  <p>
+			<li><a href="ABR_Study/Review/Equipment.pdf">Summary Review Materials</a></li>
+			<li><a href="UCLA_PhysicsReview/0-BeamLine-Components.pdf">Beam-Line Components</a></li>
+		  </p>
+		  <p><li><a>Sub-Topics</a></li>
+			<ul data-role="listview">
+			  <li><a href="ABR_Study/1-Equipment/01-LINAC_Components.pdf">LINAC Beamline Components</a></li>
+			  <li><a href="ABR_Study/1-Equipment/02-FlatteningFilters.pdf">Flattening Filters</a></li>
+			  <li><a href="ABR_Study/1-Equipment/03-Klystron.pdf">Klyston</a></li>
+			  <li><a href="ABR_Study/1-Equipment/04-Magnetron.pdf">Magnetron</a></li>
+			  <li><a href="ABR_Study/1-Equipment/05-ElectronGun.pdf">Electron Gun</a></li>
+			  <li><a href="ABR_Study/1-Equipment/06-EnergySwitch_Accel_Waveguide.pdf">Energy Switch, Accelerator Wave-Guide</a></li>
+			  <li><a href="ABR_Study/1-Equipment/07-IonChamberCorrectionFactors.pdf">Ion Chamber - Correction Factors</a></li>
+			  <li><a href="ABR_Study/1-Equipment/08-Stem_Effect.pdf">Ion Chamber - Stem Effect</a></li>
+			  <li><a href="ABR_Study/1-Equipment/09-ChamberVolume.pdf">Ion Chamber - Effect of Chamber Volume</a></li>
+			  <li><a href="ABR_Study/1-Equipment/10-DetectorComparison.pdf">Ion Chamber - Comparison with Other Detectors</a></li>
+			  <li><a href="ABR_Study/1-Equipment/11-Electrometers.pdf">Electrometers</a></li>
+			  <li><a href="ABR_Study/1-Equipment/12-WaterSubstitutes_Phantoms.pdf">Water/Tissue Substitute Materials and Phantoms</a></li>
+			  <li><a href="ABR_Study/1-Equipment/13-Simulation.pdf">CT and MR Simulators</a></li>
+			  <li><a href="ABR_Study/1-Equipment/14-SRS_QA_Equipment.pdf">SRS QA Equipment</a></li>
+			  <li><a href="ABR_Study/1-Equipment/15-TLD.pdf">TLDs</a></li>
+			  <li><a href="ABR_Study/1-Equipment/16-Film.pdf">Film</a></li>
+			  <li><a href="ABR_Study/1-Equipment/20-Equipment_Review_1.pdf">Review Questions Vol.1</a></li>
+			  <li><a href="ABR_Study/1-Equipment/21-Equipment_Review_2.pdf">Review Questions Vol.2</a></li>
+			</ul>
+		  </p>
+		  <p><li><a>Relevant Task Groups</a></li>
+			<ul data-role="listview">
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_48.pdf">TG-39: The Calibration and Use of Plane-Parallel Ionization Chambers for Dosimetry of Electron Beams</a></li>
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_72.pdf">TG-50: Basic Applications of Multi-Leaf Collimators</a></li>
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_63.pdf">TG-55: Radiochromic Film Dosimetry</a></li>
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_216.pdf">TG-69: Radiographic Film for MV Beam Dosimetry</a></li>
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_120.pdf">TG-120: Dosimetry Tools and Techniques for IMRT</a></li>			
+			</ul>
+		  </p>
+		  <p><li><a>References</a></li>
+			<ul data-role="listview">
+			  <li><a href="PDFs/LinacLecture2.pdf">Therapy Electron Linear Accelerators Explained</a></li>
+			  <li><a href="PDFs/NoviceGuide2ElectronLinearAccelerators.pdf">Novice Guide to Electron Linear Accelerators</a></li>
+			  <li><a href="PDFs/Thyratron_Pulsing_Problems.pdf">Thyratron Related Problems in the LINAC Modulator</a></li>
+			  <li><a href="PDFs/Articles/2006-Thwaites_HistoryAndDevelopmentOfTheClinicalLINAC.pdf">History & Development of the Clinical LINAC - Thwaites (2006)</a></li>
+			  <li><a href="PDFs/Articles/2011-Peach_AcceleratorScienceInMedicalPhysics.pdf">Accelerator Science in Medical Physics - Peach (2011)</a></li>
+			  <li><a href="PDFs/Articles/1999-Ranger-AAPM_RSNA-RadiationDetectors.pdf">Radiation Detectors in Nuclear Medicine - Ranger, RadioGraphics (1999)</a></li>
+			  <li><a href="PDFs/Articles/1998-Yu-TLD_Annealing.pdf">TLD Dose Measurement - Yu & Luxton, Med Phys 26.6 (1999)</a></li>
+			</ul>
+		  </p>
+		</ul>
+	</div>
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].onclick = function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  }
-}
-</script>
+	<button class="accordion">Patient Related Measurements</button>
+	<div class="panel">
+	    <ul data-role="listview">
+		  <p>
+		    <li><a href="ABR_Study/Review/Measurement-Planning.pdf">Summary Review Materials</a></li>
+		    <li><a href="PDFs/2009-ElectronBeamTherapy-Hristov.pdf">Electron Beam Therapy - Dimitre Hristov (2009)</a></li>
+			<li><a href="PDFs/Add_052418/CurrentConceptsDoseCalc_Ahnesjo.pdf">Current Concepts in Dose Calculations - Anders Ahnesjo</a></li>
+			<li><a href="PDFs/Add_052418/IMRT_OptiAlgos_Shepard.pdf">IMRT Optimization Algorithms - David Shepard</a></li>
+			<li><a href="PDFs/Add_052418/Knoos-DoseCalculationModel-PO.pdf">Model Based Dose Calculations Algorithms - Tom Knoos</a></li>
+			<li><a href="PDFs/DetectorComparisonSummary.pdf">Summary of Radiation Detectors & Dosimeters</a></li>
+			<li><a href="PDFs/IMRT_Considerations.pdf">Considerations for IMRT</a></li>
+			<li><a href="PDFs/SRS_Considerations.pdf">Considerations for SRS</a></li>
+			<li><a href="PDFs/AcceptanceCommissionCalculate.pdf">Bullet Points for Acceptance & Commissioning of LINAC Treatment Machine & TPS</a></li>
+			<li><a href="PDFs/Brachy/2006-LDRIntracavitaryApplicators.pdf">Applicators for LDR Intracavitary Treatment of GYN Cancers</a></li>
+			<li><a href="PDFs/Brachy/APBI_Notes.pdf">Notes on APBI</a></li>
+			<li><a href="PDFs/Brachy/Endobronc-Esophagus-Notes.pdf">Notes on Endobronchial & Esophogeal Brachytherapy</a></li>
+			<li><a href="PDFs/Brachy/Gyn_Brachy_Notes.pdf">Notes on Gynocological Brachytherapy</a></li>
+			<li><a href="PDFs/Brachy/ProstateLDR_Notes.pdf">Notes on Prostate LDR</a></li>
+			<li><a href="PDFs/Brachy/HDR_Brachy_2010-Findley.pdf">Rad Onc Residency Lectures in Physics: HDR Brachytherapy - David Findley</a></li>
+			<li><a href="PDFs/Brachy/HDRApplicators-Dosimetry-Rownd.pdf">HDR Applicators & Dosimetry - Jason Rownd</a></li>
+			<li><a href="PDFs/Brachy/ICRUReporting_CervicalIntracavitary.pdf">ICRU Cervical Intracavitary Dose Reporting Recommendation - Bruce Thomadsen</a></li>
+			<li><a href="PDFs/Brachy/Thomadsen-FromLDR2HDR_Cervix.pdf">Conversion from LDR to HDR Intracavitary Brachytherapy for Cervical Cancer - Bruce Thomadsen</a></li>
+			<li><a href="PDFs/Brachy/LDR_Intracavitary_Applicators.pdf">LDR Intracavitary Brachytherapy Applicators - UT MD Anderson Cancer Center</a></li>
+		  </p>
+		  <p><li><a>Sub-Topics</a></li>
+			<ul data-role="listview">
+			  <li><a href="ABR_Study/2-PatientRelatedMeasurements/01-PlanQuality.pdf">Plan Quality & Improvement</a></li>
+			  <li><a href="ABR_Study/2-PatientRelatedMeasurements/02-BeamModifiersAndVolumes.pdf">Use of Wedges & Modifiers</a></li>
+			  <li><a href="ABR_Study/2-PatientRelatedMeasurements/03-CT_Commissioning.pdf">Commissioning of CT for RT Planning</a></li>
+			  <li><a href="ABR_Study/2-PatientRelatedMeasurements/04-DVH_DoseTolerance.pdf">Use of DVHs & Tolerance Doses</a></li>
+			  <li><a href="ABR_Study/2-PatientRelatedMeasurements/05-BeamCharacteristics_Photon.pdf">Photon Beam Characteristics and Modeling</a></li>
+			  <li><a href="ABR_Study/2-PatientRelatedMeasurements/06-DoseCalculationAlgorithms.pdf">Photon Dose Calculation Algorithms</a></li>
+			  <li><a href="PDFs/Add_052418/EclipseAlgorithms13.6_RefGuide.pdf">Eclipse 13.6 Photon & Electron Algorithms Reference Guide</a></li>
+			  <li><a href="ABR_Study/2-PatientRelatedMeasurements/07-SeparatingPrimaryAndScatter.pdf">Methods for Separating Primary & Scatter</a></li>
+			  <li><a href="ABR_Study/2-PatientRelatedMeasurements/08-MU_Calcs_Photons.pdf">Photon MU Calculations</a></li>
+			  <li><a href="ABR_Study/2-PatientRelatedMeasurements/09-BeamCharacteristics_Electron.pdf">Electron Beam Characteristics</a></li>
+			  <li><a href="ABR_Study/2-PatientRelatedMeasurements/10-Dosimetry_Electron.pdf">Electron Dosimetry</a></li>
+			  <li><a href="ABR_Study/2-PatientRelatedMeasurements/11-MU_Calcs_Electrons.pdf">Electron MU Calculations</a></li>
+			  <li><a href="ABR_Study/2-PatientRelatedMeasurements/12-Brachy_General.pdf">Brachytherapy Review</a></li>
+			  <li><a href="ABR_Study/2-PatientRelatedMeasurements/13-Brachy_APBI.pdf">Brachytherapy: Partial Breast Irradiation</a></li>
+			  <li><a href="ABR_Study/2-PatientRelatedMeasurements/20-PatientMeasurement_Review_2.pdf">Patient Related Measurement Review Questions</a></li>
+			</ul>
+		  </p>
+		  <p><li><a>Relevant Task Groups</a></li>
+			<ul data-role="listview">
+				<li><a href="https://www.aapm.org/pubs/reports/RPT_32.pdf">TG-25: Clinical Electron-Beam Dosimetry</a></li>
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_17.pdf">TG-29: The Physical Aspects of Total and Half Body Photon Irradiation</a></li>
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_50.pdf">TG-36: Fetal Dose from Radiotherapy with Photon Beams</a></li>
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_51.pdf">TG-43: Dosimetry of Interstitial Brachytherapy Sources</a></li>
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_84.pdf">TG-43-U: Update to TG-43</a></li>
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_84S.pdf">TG-43-U-S: Supplement to Update to TG-43</a></li>
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_76.pdf">TG-61: Protocol for 40-300 kV X-Ray Beam Dosimetry in Radiotherapy and Radiobiology</a></li>
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_87.pdf">TG-62: Diode In Vivo Dosimetry for Patients Receiving External Beam Radiation Therapy</a></li>
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_85.pdf">TG-65: Tissue Inhomogeneity Correction for Megavoltage Photon Beams</a></li>
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_99.pdf">TG-70: Recommendations for Clinical Electron Beam Dosimetry</a></li>
+				<li><a href="https://www.aapm.org/pubs/reports/RPT_258.pdf">TG-71: Monitor Unit Calculations for External Photon and Electron Beams</a></li>
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_91.pdf">TG-76: The Management of Respiratory Motion in Radiation Oncology</a></li>
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_120.pdf">TG-120: Dosimetry Tools and Techniques for IMRT</a></li>
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_186.pdf">TG-186: Model-Based Dose Calculations Methods in Brachytherapy Beyond the TG-43 Formalism</a></li>
+			</ul>
+		  </p>
+		  <p><li><a>References</a></li>
+			<ul data-role="listview">	
+				<li><a href="PDFs/RCF_dosimetry.pdf">Do's and Dont's of Gafchromic Film Dosimetry</a></li>
+				<li><a href="PDFs/BMP203_Dosimeters_2013-04-17.pdf">Radiation Dosimeters - Minsong Cao (2013)</a></li>
+				<li><a href="PDFs/critical_structures_dose_constraints.pdf">Critical Structures Dose-Volume Constraint Guidelines (2008)</a></li>
+				<li><a href="PDFs/Add_052418/StemEffect_1975.pdf">Stem Corrections for Ionization Chambers - Ibbott et al, Med Phys 2.6 (1975)</a></li>
+				<li><a href="PDFs/Articles/1999-Ahnesjo_DoseCalculations.pdf">Dose Calculations for External Photon Beams in Radiotherapy - Ahnesjo & Aspradakis, PMB 44 (1999)</a></li>
+				<li><a href="PDFs/Articles/1985-Mohan-Validity_of_Separating_Primary_and_Scatter.pdf">Validity of the Concept of Separating Primary & Scatter Dose - Mohan & Chui, Med Phys 12.6 (1985)</a></li>
+				<li><a href="PDFs/Brachy/2006-Brachytherapy-Falkenberg_HDR_vs_LDR.pdf">LDR vs. HDR Intracavitary Brachy for Cervical Carcinoma - Falkenberg et al, Brachytherapy 5 (2006)</a></li>
+				<li><a href="PDFs/Brachy/ABS_Recs_HDR.pdf">ABS Recommendations for HDR Brachytherapy for Cervical Carcinoma - Nag et al, IJROBP 48.1 (2000)</a></li>
+				<li><a href="PDFs/Brachy/ABS_Recs-LDR.pdf">ABR Recommendations for LDR Brachytherapy for Cervical Carcinoma - Nag et al, IJROBP 52.1 (2002)</a></li>
+			</ul>
+		  </p>
+		</ul>
+	</div>
+
+	<button class="accordion">Calibration, QC, & QA</button>
+	<div class="panel">
+	    <ul data-role="listview">
+		  <p><li><a href="ABR_Study/Review/Calibration-QA-QC.pdf">Summary Review Materials</a></li></p>
+		  <p>
+			<li><a href="PDFs/TG51/Wisc_TG21_Lecture.pdf">UWisconsin TG-21 Notes</a></li>
+		    <li><a href="PDFs/TG51/Wisc_TG51_Lecture.pdf">UWisconsin TG-51 Notes</a></li>
+			<li><a href="PDFs/Brachy/BrachyPlanQA.pdf">QA Review of Brachytherapy Treatment Plans - Zuofong Li</a></li>
+			<li><a href="PDFs/Brachy/Calibration_Brachy_Sources.pdf">Calibration for Brachytherapy Sources - Larry DeWerd</a></li>
+		  </p>
+		  <p><li><a>Sub-Topics</a></li>
+			<ul data-role="listview">
+			  <li><a href="ABR_Study/3-Calibration_QC_QA/01-TG51.pdf">TG-51 Calibration Procedure</a></li>
+			  <li><a href="ABR_Study/3-Calibration_QC_QA/02-OutputCalibration.pdf">Output Calibrations</a></li>
+			  <li><a href="ABR_Study/3-Calibration_QC_QA/03-KERMA_v_DOSE.pdf">KERMA v. Dose</a></li>
+			  <li><a href="ABR_Study/3-Calibration_QC_QA/04-QC_Photons.pdf">Photon QC</a></li>
+			  <li><a href="ABR_Study/3-Calibration_QC_QA/05-LINAC_Acceptance_Commissioning.pdf">LINAC Acceptance & Commissioning</a></li>
+			</ul>
+		  </p> 
+		  <p><li><a>Relevant Task Groups</a></li>
+			<ul data-role="listview">
+				<li><a href="http://www.aapm.org/pubs/reports/OR_02.pdf">TG-21: Protocol for the Determination of Absorbed Dose from High-Energy Photon and Electron Beams</a></li>
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_46.PDF">TG-40: Comprehensive QA for Radiation Oncology</a></li>
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_47.pdf">TG-45: Code of Practice for Radiotherapy Accelerators</a></li>
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_67.pdf">TG-51: Protocol for Clinical Reference Dosimetry of High-Energy Photon and Electron Beams</a></li>
+				<li><a href="https://www.aapm.org/pubs/reports/RPT_67_Addendum.pdf">TG-51A: Addendum to the AAPM’s TG-51 protocol for clinical reference dosimetry of high-energy photon beams</a></li>
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_62.pdf">TG-53: Quality Assurance for Clinical Radiotherapy Treatment Planning</a></li>
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_83.pdf">TG-66: QA for CT Simulators and the CT Simulation Process</a></li>
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_97.pdf">TG-74: In-Air Output Ratio, Sc, for MV Photon Beams</a></li>
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_101.pdf">TG-101: Stereotactic Body Radiation Therapy</a></li>
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_106.pdf">TG-106: Accelerator Beam Data Commissioning Equipment and Procedures</a></li>
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_119.pdf">TG-119: IMRT Commissioning</a></li>
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_142.pdf">TG-142: QA of Medical Accelerators</a></li>
+				<li><a href="https://www.aapm.org/pubs/reports/RPT_147.pdf">TG-147: QA for Non-Radiographic Radiotherapy Localization and Positioning Systems</a></li>
+				<li><a href="https://www.aapm.org/pubs/reports/RPT_148.pdf">TG-148: QA of Tomotherapy</a></li>
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_154.pdf">TG-154: QA of US-guided EBRT for Prostate Cancer</a></li>
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_166.pdf">TG-166: The Use and QA of Biologically Related Models for Treatment Planning</a></li>
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_179.pdf">TG-179: QA for IGRT Utilizing CT-based Technologies</a></li>
+			</ul>
+		  </p>
+		  <p><li><a>References</a></li>
+			<ul data-role="listview">
+			  <li><a href="PDFs/2012-CommissioningVarianTruebeamLINAC.pdf">Commissioning of the Varian Truebeam - Glide-Hurst et al, Med Phys 40.3(2013)</a></li>
+			  <li><a href="PDFs/2017_Truebeam_IPA.pdf">Varian Truebeam Installation Product Acceptance Procedure (2017)</a></li>
+			  <li><a href="PDFs/TG51/CHO_TG21-51.pdf">Comparison Between TG-51 & TG-21 - Cho et al, JACMP 1.3 (2000)</a></li>
+			  <li><a href="PDFs/TG51/TG51_CommonErrors.pdf">TG-51: Experience From 150 Institutions, Common Errors, & Helpful Hints - Tailor et al, JACMP 4.2 (2003)</a></li>
+			  <li><a href="PDFs/CH07_Huq.pdf">Review of TG-51 Protocol - M. Saiful Huq</a></li>
+			  <li><a href="PDFs/08_Followill.pdf">Clinical Implementation of the TG-51 Calibration Protocol - David S. Followill</a></li>
+			  <li><a href="PDFs/CH09_Rogers.pdf">The Physics of AAPM's TG-51 Protocol - D.W.O. Rogers</a></li>
+			  <li><a href="PDFs/09Rogers-ThePhysicsofTG-51.pdf">Physics of the TG-51 Dosimetry Protocol - D.W.O. Rogers, AAPM Summer School (2009)</a></li>
+			  <li><a href="PDFs/TG142_Tolerances.pdf">TG-142 LINAC QA Tolerances</a></li>
+			</ul>
+		  </p>	  
+	    </ul>
+	</div>
+
+	<button class="accordion">Image Acquisition, Processing, & Display</button>
+	<div class="panel">
+	    <ul data-role="listview">
+		  <p><li><a href="ABR_Study/Review/Imaging.pdf">Summary Review Materials</a></li></p>
+		  <p><li><a>Sub-Topics</a></li>
+			<ul data-role="listview">
+			  <li><a href="ABR_Study/4-Imaging/01-Imaging_1.pdf">Imaging Overview Vol.1</a></li>
+			  <li><a href="ABR_Study/4-Imaging/02-Imaging_2.pdf">Imaging Overview Vol.2</a></li>
+			  <li><a href="ABR_Study/4-Imaging/03-EPID.pdf">Electronic Portal Imaging Detectors</a></li>
+			  <li><a href="PDFs/IGRT.pdf">Image-Guided Radiotherapy at UCLA - S.Tenn & M.Cao (2013)</a></li>
+			</ul>
+		  </p>
+		  <p><li><a>Relevant Task Groups</a></li>
+			<ul data-role="listview">
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_75.pdf">TG-58: Clinical Use of EPI</a></li>
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_95.pdf">TG-75: The Management of Imaging Dose During Image-Guided Radiotherapy</a></li>
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_91.pdf">TG-76: The Management of Respiratory Motion in Radiation Oncology</a></li>
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_104.pdf">TG-104: The Role of In-Room kV X-Ray Imaging for Patient Setup and Target Localization</a></li>
+				<li><a href="https://aapm.onlinelibrary.wiley.com/doi/epdf/10.1002/mp.12256">TG-132: Use of Image Registration & Fusion Algorithms & Techniques in Radiotherapy</a></li>
+			</ul>
+		  </p>
+		  <p><li><a>References</a></li>
+			<ul data-role="listview">
+			  <li><a href="PDFs/EPID-2002-PMB-Antonuk.pdf">EPIDs: A Review - Larry Antonuk, PMB 47 (2002)</a></li>
+			  <li><a href="PDFs/2005-FlatDetectors-Spahn.pdf">Flat Detectors & Their Clinical Applications - Martin Spahn, Eur Radiol 15 (2005)</a></li>
+			</ul>
+		  </p>
+		</ul>
+	</div>
+
+	<button class="accordion">Radiation Protection & Patient Safety</button>
+	<div class="panel">
+	    <ul data-role="listview">
+		  <p>
+			<li><a href="ABR_Study/Review/Safety-Shielding.pdf">Summary Review Materials</a></li>
+			</br>
+			<li><a href="PDFs/2016-RadiationProtection-Gupta.pdf">Radiation Protection - Anil Gupta (2016)</a></li>
+			<li><a href="PDFs/2009-StanfordPhysicsCourse-RadiationProtection.pdf">Stanford Rad Onc Residents' Physics Course - Radiation Protection (2009)</a></li>
+			<li><a href="PDFs/IAEATraining-RadiationProtection_Part7-ShieldingDesign.pdf">IAEA Training: Radiation Protection in Radiotherapy Part 7 - Design of Facilities & Shielding</a></li>
+			</br>
+			<li><a href="PDFs/10CFR20.pdf">NRC: 10 CFR Part 20 Summary Slides</a></li>
+			<li><a href="PDFs/NRC-Transpo-of-RadMat.pdf">NRC: Transportation of Radioactive Materials</a></li>
+			</br>
+			<li><a href="PDFs/NCRP/NCRP151_SummarySlides.pdf">NCRP Report No. 151 Summary Slides</a></li>
+			<li><a href="PDFs/NCRP/Overview_NCRP151-Wu.pdf">NCRP Report No. 151 Overview Slides - Raymond Wu</a></li>
+			<li><a href="PDFs/NCRP/NCRP147_SummarySlides_AAPM2007.pdf">NCRP Report No. 147 Summary Slides - Melissa Martin (2007)</a></li>
+			</br>
+			<li><a href="PDFs/NUREG1556-Wendt.pdf">NUREG 1556-based Release of Patients from Radiation Safety Restrictions - Richard Wendt</a></li>
+			</br>
+			<li><a href="PDFs/2006-ShieldingExamples-Rodgers.pdf">Shielding III: Practical Examples, Including IMRT, TBI, SRS - James Rodgers (2006)</a></li>
+			<li><a href="PDFs/2009-Shielding-Klein.pdf">Radiation Shielding - Eric Klein (2009)</a></li>
+			<li><a href="PDFs/2003-VarianNeutronDoors.pdf">Varian - Neutron Doors for High Energy Accelerators (2003)</a></li>
+			</br>
+			<li><a href="PDFs/Brachy/BrachyFacilityShielding.pdf">Brachytherapy Facility Shielding - Glasgow</a></li>
+			<li><a href="PDFs/Brachy/HDR_SLR.pdf">Brachytherapy Physics: HDR Installation, Commissioning, & Procedures</a></li>
+			<li><a href="PDFs/Brachy/2008-UM_HDR_Program_Implementation.pdf">From Licensing to QA, How to Implement HDR Brachy Into Your Clinic - Joann Prisciandaro (2008)</a></li>
+		</p>
+		  <p><li><a>Relevant Task Groups</a></li>
+			<ul data-role="listview">
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_80.pdf">TG-11: The Solo Practice of Medical Physics in Radiation Oncology</a></li>
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_19.pdf">TG-27: Neutron Measurements Around High Energy X-Ray Radiotherapy Machines</a></li>
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_47.pdf">TG-45: Code of Practice for Radiotherapy Accelerators</a></li>
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_109.pdf">TG-109: Code of Ethics for the AAPM</a></li>
+				<li><a href="http://www.aapm.org/pubs/reports/RPT_160.PDF">TG-160: Radiation Safety Officer Qualifications for Medical Facilities</a></li>
+			</ul>
+		  </p>
+		  <p>
+		    <li><a>NRC Regulations</a></li>
+			<ul data-role="listview">
+			  <li><a href="https://www.nrc.gov/reading-rm/doc-collections/cfr/part019/">NRC: 10 CFR Part 19 - Notices, Instructions & Reports to Workers: Inspection & Investigations</a></li>
+			  <li><a href="https://www.nrc.gov/reading-rm/doc-collections/cfr/part020/">NRC: 10 CFR Part 20 - Standards for Protection Against Radiation</a></li>
+			  <li><a href="https://www.nrc.gov/reading-rm/doc-collections/cfr/part035/">NRC: 10 CFR Part 35 - Medical Use of Byproduct Material</a></li>
+			  <li><a href="https://www.nrc.gov/reading-rm/doc-collections/cfr/part071/">NRC: 10 CFR Part 71 - Packaging & Transportation of Radioactive Material</a></li>
+			</ul>
+		  </p>
+		  <p>
+		    <li><a>NCRP Reports</a></li>
+			<ul data-role="listview">
+			  <li><a href="PDFs/NCRP/NCRP038.pdf">NCRP Report No. 38: Protection Against Neutron Radiation (1971)</a></li>
+			  <li><a href="PDFs/NCRP/NCRP041.pdf">NCRP Report No. 41: Specification of Gamma-Ray Brachytherapy Sources (1974)</a></li>
+			  <li><a href="PDFs/NCRP/NCRP049.pdf">NCRP Report No. 49: Structural Shielding Design & Evaluation for X & Gamma Rays Up To 10 MeV (1976)</a></li>
+			  <li><a href="PDFs/NCRP/NCRP057.pdf">NCRP Report No. 57: Instrumentation & Monitoring Methods for Radiation Protection (1978)</a></li>
+			  <li><a href="PDFs/NCRP/NCRP079.pdf">NCRP Report No. 79: Neutron Contamination from Medical Electron Accelerators (1984)</a></li>
+			  <li><a href="PDFs/NCRP/NCRP105.pdf">NCRP Report No. 105: Radiation Protection for Medical & Allied Health Personal (1989)</a></li>
+			  <li><a href="PDFs/NCRP/NCRP116.pdf">NCRP Report No. 116: Limitation of Exposure to Ionizing Radiation (1993)</a></li>
+			  <li><a href="PDFs/NCRP/NCRP128.pdf">NCRP Report No. 128: Radionuclide Exposure of the Embryo/Fetus (1998)</a></li>
+			  <li><a href="PDFs/NCRP/NCRP136.pdf">NCRP Report No. 136: Evaluation of the Linear-Non-Threshold Dose-Response Model for Ionizing Radiation (2001)</a></li>
+			  <li><a href="PDFs/NCRP/NCRP147.pdf">NCRP Report No. 147: Structural Shielding Design for Medical X-Ray Imaging Facilities (2004)</a></li>
+			  <li><a href="PDFs/NCRP/NCRP151.pdf">NCRP Report No. 151: Structural Shielding Design & Evaluation for MV Radiotherapy Facilities (2005)</a></li>
+			  <li><a href="PDFs/NCRP/NCRP157.pdf">NCRP Report No. 157: Radiation Protection in Educational Institutions (2007)</a></li>
+			  <li><a href="PDFs/NCRP/NCRP174.pdf">NCRP Report No. 174: Preconception & Prenatal Radiation Exposure: Health Effects & Protective Guidance (2013)</a></li>
+			</ul>
+		  </p>
+		  <p>
+			<li><a>ICRU Reports</a></li>
+			<ul data-role="list-view">
+				<li><a href="PDFs/ICRU/ICRU050.pdf">ICRU Report No. 50: Prescribing, Recording, & Reporting Photon Beam Therapy (1993)</a></li>
+				<li><a href="PDFs/ICRU/ICRU062.pdf">ICRU Report No. 62: Prescribing, Recording, & Reporting Photon Beam Therapy: Supplement to ICRU 50 (1999)</a></li>
+				<li><a href="PDFs/ICRU/ICRU071.pdf">ICRU Report No. 71: Prescribing, Recording, & Reporting Electron Beam Therapy (2004)</a></li>
+				<li><a href="PDFs/ICRU/ICRU078.pdf">ICRU Report No. 78: Prescribing, Recording, & Reporting Proton Beam Therapy (2007)</a></li>
+				<li><a href="PDFs/ICRU/ICRU083.pdf">ICRU Report No. 83: Prescribing, Recording, & Reporting Photon Beam IMRT (2010)</a></li>
+				<li><a href="PDFs/ICRU/ICRU089.pdf">ICRU Report No. 89: Prescribing, Recording, & Reporting Brachytherapy for Cancer of the Cervix (2016)</a></li>
+				<li><a href="PDFs/ICRU/ICRU091.pdf">ICRU Report No. 91: Prescribing, Recording, & Reporting of Stereotactic Treatments with Small Photon Beams (2017)</a></li>
+			</ul>
+		  </p>
+		  <p>
+		    <li><a>References</a></li>
+			<ul data-role="listview">
+			  <li><a href="PDFs/2007-McGinley-DirectShieldedDoors.pdf">Direct Shielded Doors - Patton McGinley (2007)</a></li>
+			  <li><a href="PDFs/2001-RadiationShieldingMV_Post_NCRP49_Biggs.pdf">Radiation Shielding for MV Therapy Machines in the Post-NCRP 49 Era - Peter Biggs (2001)</a></li>
+			  <li><a href="PDFs/MelissaMartin-ShieldingDesign.pdf">Shielding Design Methods for Radiation Oncology Depts. - Melissa Martin (2008)</a></li>
+			  <li><a href="PDFs/radsafetymanual.pdf">UCLA Radiation Safety Manual (2012)</a></li>
+			  <li><a href="PDFs/FAQ-Eye_Plaque_Consult.pdf">Eye Plaques FAQ</a></li>
+			  <li><a href="PDFs/2007-ClinacIX-ShieldingCalculationReport-Richardson.pdf">Shield Calculation Report: Varian Clinica IX - Susan Richardson, Methodist Hospital - Willowbrook (2007)</a></li>
+			  <li><a href="PDFs/NCRP/2015-LINAC_Shielding_30Years_Beyond_NCRP49_Biggs.pdf">LINAC Shielding: 30 Years Beyond NCRP 49 - Peter Biggs (2015)</a></li>
+			  <li><a href="https://www.nrc.gov/docs/ML0734/ML073400289.pdf">NUREG-1556 Vol.9, Rev.2: Consolidated Guidance About Materials Licenses</a></li>
+			  <li><a href="PDFs/cfr-title-10.pdf">US Nuclear Regulatory Commission Regulations: Title 10, Code Of Federal Regulations</a></li>
+			</ul>
+		  </p>
+	    </ul>
+	</div>
+
+	<button class="accordion">Additional Resources</button>
+	<div class="panel">
+	    <ul data-role="listview">
+			<p>
+				<li><a href="UCLA_PhysicsReview/AtomicStructure_and_Radioactivity.pdf">Atomic, Nuclear Structure & Radioactivity</a></li>
+				<li><a href="PDFs/Electrons_Fundamentals.pdf">Electron Beams: Physical Principles & Dosimetry - Gifford (2015)</a></li>
+				</p>
+		</ul>
+	    <ul data-role="listview">
+		  <p><li><a>Equation Cheat Sheets</a></li>
+			<ul data-role="listview">
+			  <li><a href="EquationSheets/Rad_Exam_1.pdf">Units, Physical Constants, Atomic & Nuclear Structure</a></li>
+			  <li><a href="EquationSheets/Rad_Exam_2.pdf">Radioactivity & Decay</a></li>
+			  <li><a href="EquationSheets/Rad_Exam_3.pdf">Particle Interactions & Radiation Shielding</a></li>
+			  <li><a href="EquationSheets/ARCcheatsheet.pdf">Advanced Radiotherapy Consulting Equation Sheet</a></li>
+			</ul>
+		  </p>
+		  <p><li><a>Notes</a></li>
+			<ul data-role="listview">
+			  <li><a href="Basic_Physics_Review/2012_PhotonInteractions_Dose.pdf">Photons Interactions & Dose</a></li>
+			  <li><a href="Basic_Physics_Review/2012_Proton101.pdf">Protons 101</a></li>
+			</ul>
+		  </p>
+		  <p><li><a>AAPM Summer School 2009</a></li>
+			<ul data-role="listview">
+			  <li><a href="http://www.aapm.org/education/VL/?t=byE&e=SS&y=2009">AAPM Virtual Library - Presentation Videos</a></li>
+			  <li><a href="http://www.aapm.org/meetings/09SS/ProgramInfo.asp">Meeting Program with Slides</a></li>
+			</ul>
+		  </p>
+		  <p><li><a>Dosimetry Review Course 2009</a></li>
+			<ul data-role="listview">
+				<li><a href="PDFs/Dosi/01-DosimetryReviewAgenda.pdf">Course Agenda</a></li>
+				<li><a href="PDFs/Dosi/02-Quantities-Units.pdf">Review of Math, Quantities, & Units</a></li>
+				<li><a href="PDFs/Dosi/03-BasicRadiationPhysics.pdf">Basic Physics & Photon Beams</a></li>
+				<li><a href="PDFs/Dosi/04-PhotonDoseCalcs.pdf">Dose Calculation Concepts for Photons</a></li>
+				<li><a href="PDFs/Dosi/05-Dosimeters-Detectors.pdf">Radiation Dosimeters</a></li>
+				<li><a href="PDFs/Dosi/06-SpecialTechniques.pdf">Special Planning Techniques</a></li>
+				<li><a href="PDFs/Dosi/07-Safety-Protection.pdf">Radiation Protection</a></li>
+				<li><a href="PDFs/Dosi/08-ClinicalRadiobiology.pdf">Clinical Radiobiology</a></li>
+				<li><a href="PDFs/Dosi/09-QA.pdf">Quality Assurance</a></li>
+				<li><a href="PDFs/Dosi/10-TreatmentPlanning.pdf">Photon Beam Planning</a></li>
+				<li><a href="PDFs/Dosi/11-OffAxis-Inhomogeneities.pdf">Inhomogeneity Corrections</a></li>
+				<li><a href="PDFs/Dosi/12-ElectronPhysics.pdf">Physics of Electron Beams</a></li>
+				<li><a href="PDFs/Dosi/13-ElectronPlanning.pdf">Electron Treatment Planning</a></li>
+				<li><a href="PDFs/Dosi/14-Brachy.pdf">Brachytherapy Physics</a></li>
+				<li><a href="PDFs/Dosi/15-IMRT.pdf">IMRT Theory & Planning</a></li>
+				<li><a href="PDFs/Dosi/16-Imaging.pdf">Imaging in Radiotherapy</a></li>
+				<li><a href="PDFs/Dosi/17-IGRT.pdf">IGRT Techniques</a></li>
+				<li><a href="PDFs/Dosi/18-CalculationExamples.pdf">Calculation Examples</a></li>
+			</ul>
+	    </ul>
+	</div>
+
+	<script>
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+	  acc[i].onclick = function() {
+	    this.classList.toggle("active");
+	    var panel = this.nextElementSibling;
+	    if (panel.style.maxHeight){
+	      panel.style.maxHeight = null;
+	    } else {
+	      panel.style.maxHeight = panel.scrollHeight + "px";
+	    } 
+	  }
+	}
+	</script>
 
 </body>
 </html>
